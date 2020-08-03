@@ -176,7 +176,7 @@ def nbr2(bnir, swir2):
 
 def nmdi(bnir, swir1, swir2):
     # Normalized Multi-band Drought Index
-    nmdi = bnir - (swir1 - swir2) / (bnir + (swir1 - swir2))
+    nmdi = bnir - (swir1 - swir2) / bnir + (swir1 - swir2)
     return nmdi
 
 
